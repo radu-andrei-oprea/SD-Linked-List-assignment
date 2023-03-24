@@ -1,0 +1,2 @@
+pos0: (3: Ana/1, are/1)(4: Anca/1)(5: ajuns/1)
+pos1: (4: bine/1)

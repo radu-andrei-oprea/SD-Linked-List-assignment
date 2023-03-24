@@ -1,0 +1,28 @@
+/* OPREA Radu-Andrei - 335CB  */
+
+Pentru implementare, s-au folosit fisierele sursa din laboratorul de tabele hash.
+
+Se creaza o noua structura: Cuvant, ce retine textul in sine si numarul de aparitii. Acesta va fi incrementat la adaugarea sa in lista.
+
+Dupa modelul functiilor de inserare in lista/tabela, s-au creat functiile Ins_Cuvinte si InsTHCuvinte.
+Spre deosebire de cele generice, acestea sunt facute special pentru structura Cuvant.
+
+Se vor introduce cuvintele in liste, urmand sa fie introduce in tabela hash. Acestea vor fi separate de caracterul de inceput in tabela, urmand sa fie diferentiate de lungime. Se va face un bubblesort peste liste, cu functia "ordonator" ca si comparator.
+
+In generarea tabelei, avem un nou obiect Cuvant ce memoreaza elementele din lista. Dimensiunea tabelei este ('Z' - 'A') + 1, adica numarul de litere din alfabet.
+
+In cadrul afisarii se tine cont si de "cheile" tabelei. Acestia sunt niste indici ai primelor litere, si se folosesc pentru identificarea rapida a pozitiei din lista tabelei.
+Poate sa existe situatia in care avem valori nule la restul indicilor. Variabila 'undegistered_key' se ocupa sa tina evidenta. Cand aceasta devine 1, se sare peste indice.
+
+Antetul functiei "PrintAll": tabela hash aH, maxim - un indice care serveste atat ca si numar de aparitii pentru al doilea print, cat si ca lungime pentru al treilea print, litera - litera dupa care realizam al treilea print. Se va tine cont daca este majuscula sau nu. In cazul primului print, cele doua variabile iau valoarea de -1 sau '0'. Functia poate realiza toate cele trei printuri in functie de valoarea acestor doua variabile.
+
+Functia "citesteLista" are rol atat de citire cat si de apelare a "Print"-ului. Citirea se realizeaza clasic cu getline si separare cu strtok. Se tine cont de valoarea primului caracter, ce va servi ca si indice la afisare. Primele caractere pot avea si valori non-litere; acestea se vor ignora. Se adauga in vectorul de chei si se incepe popularea unei liste generice cu structuri Cuvant. Se va genera tabela hash, si ii adaugam vectorul de chei, pentru detectarea mai rapida a cuvintelor.
+La print, in functie de valoarea variabilelor "maxim" si "literea", are loc comportamentul specific pentru cele trei functii.
+
+
+Observatii: afisarea in cazul normal sau dupa numarul de aparitii in teste este inconsistenta, putand fi depunctat daca nu se observa ca una cere un spatiu in plus iar cealalta nu;
+			testul 6 pare incomplet sau scris gresit.
+
+
+README-ul a fost adaugat complet pe moodle, pentru a evita ratarea deadline-ului pe vmchecker.
+

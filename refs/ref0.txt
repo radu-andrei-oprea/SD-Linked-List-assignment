@@ -1,0 +1,2 @@
+pos 0: (3:Ana/1, are/1)(4:Anca/1)(5:acasa/2, ajuns/1)(8:albastru/2)
+pos 1: (4:bine/1)(5:balon/2)
